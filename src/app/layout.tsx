@@ -44,7 +44,7 @@ export const viewport: Viewport = {
 
 export default function RootLayout({ children }: LayoutProps<"/">) {
   return (
-    <html lang="sv" className={`${newsreader.variable} ${schibsted.variable}`}>
+    <html lang="sv" data-scroll-behavior="smooth" className={`${newsreader.variable} ${schibsted.variable}`}>
       <body className="flex min-h-dvh flex-col">
         <a
           href="#innehall"

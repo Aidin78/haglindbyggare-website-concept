@@ -36,6 +36,7 @@
   html {
     -webkit-text-size-adjust: 100%;
     scroll-padding-top: 6rem;
+    scrollbar-gutter: stable;
   }
 
   @media (prefers-reduced-motion: no-preference) {
