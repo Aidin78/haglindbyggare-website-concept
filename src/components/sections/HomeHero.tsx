@@ -12,10 +12,10 @@ export function HomeHero() {
     <section className="relative">
       <Container className="grid gap-12 pt-12 pb-16 sm:pt-16 lg:grid-cols-12 lg:gap-10 lg:pt-20 lg:pb-24">
         <div className="flex flex-col justify-center lg:col-span-7 lg:pr-6">
-          <Eyebrow className="text-pine">Byggmästare i {site.serviceArea.join(" & ")}</Eyebrow>
+          <Eyebrow className="text-brand-ink">Byggmästare i {site.serviceArea.join(" & ")}</Eyebrow>
           <h1 className="mt-7 font-display text-display font-normal">
             Från friggebod <span className="text-ink-soft">till</span>{" "}
-            <em className="text-pine italic">helt nytt hus.</em>
+            <em className="text-brand-ink italic">helt nytt hus.</em>
           </h1>
           <p className="mt-8 max-w-xl text-lead text-ink-soft">
             Haglind Byggare är ett familjeföretag som renoverar, bygger till och bygger nytt åt privatpersoner och

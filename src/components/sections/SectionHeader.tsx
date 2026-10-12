@@ -15,7 +15,7 @@ export function SectionHeader({ id, index, eyebrow, title, intro, tone = "light"
   return (
     <div className={cn("grid gap-6 lg:grid-cols-12 lg:gap-10", className)}>
       <div className="lg:col-span-7">
-        <Eyebrow index={index} className={tone === "dark" ? "text-moss" : "text-pine"}>
+        <Eyebrow index={index} className={tone === "dark" ? "text-brand" : "text-brand-ink"}>
           {eyebrow}
         </Eyebrow>
         <h2 id={id} className="mt-6 font-display text-headline">

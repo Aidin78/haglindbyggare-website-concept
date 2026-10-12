@@ -31,7 +31,7 @@ export default function AboutPage() {
         eyebrow="Om oss"
         title={
           <>
-            Ett familjeföretag i byggbranschen <em className="text-pine italic">sedan år {site.foundedYear}.</em>
+            Ett familjeföretag i byggbranschen <em className="text-brand-ink italic">sedan år {site.foundedYear}.</em>
           </>
         }
         lead={
@@ -46,7 +46,7 @@ export default function AboutPage() {
         <Container className="grid gap-14 lg:grid-cols-12 lg:gap-10">
           <div className="lg:col-span-5">
             <div className="lg:sticky lg:top-32">
-              <Eyebrow index="01" className="text-pine">
+              <Eyebrow index="01" className="text-brand-ink">
                 Vår historia
               </Eyebrow>
               <h2 id="historia-rubrik" className="mt-6 font-display text-headline">
@@ -59,7 +59,7 @@ export default function AboutPage() {
             <ol className="border-t border-ink/15">
               {timeline.map((item) => (
                 <li key={item.year} className="reveal grid gap-3 border-b border-ink/15 py-8 sm:grid-cols-[8rem_1fr] sm:gap-8 sm:py-10">
-                  <span className="font-display text-3xl leading-none text-pine">{item.year}</span>
+                  <span className="font-display text-3xl leading-none text-brand-ink">{item.year}</span>
                   <p className="text-lg text-ink-soft">{item.text}</p>
                 </li>
               ))}
@@ -89,7 +89,7 @@ export default function AboutPage() {
       <section aria-labelledby="samarbeten-rubrik" className="bg-paper-deep py-20 sm:py-28 lg:py-36">
         <Container className="grid gap-12 lg:grid-cols-12 lg:gap-10">
           <div className="lg:col-span-7">
-            <Eyebrow index="02" className="text-pine">
+            <Eyebrow index="02" className="text-brand-ink">
               Samarbeten
             </Eyebrow>
             <h2 id="samarbeten-rubrik" className="mt-6 font-display text-headline">
@@ -112,7 +112,7 @@ export default function AboutPage() {
       <section aria-labelledby="storlek-rubrik" className="py-20 sm:py-28 lg:py-36">
         <Container className="grid gap-10 lg:grid-cols-12 lg:gap-10">
           <div className="lg:col-span-7">
-            <Eyebrow index="03" className="text-pine">
+            <Eyebrow index="03" className="text-brand-ink">
               Inget projekt för litet
             </Eyebrow>
             <h2 id="storlek-rubrik" className="mt-6 font-display text-headline">

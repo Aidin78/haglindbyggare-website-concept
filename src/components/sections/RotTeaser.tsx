@@ -8,7 +8,7 @@ export function RotTeaser({ index }: { index?: string }) {
       <Container>
         <div className="grid gap-10 border border-ink/15 p-6 sm:p-10 lg:grid-cols-12 lg:gap-10 lg:p-16">
           <div className="lg:col-span-6">
-            <Eyebrow index={index} className="text-pine">
+            <Eyebrow index={index} className="text-brand-ink">
               ROT-avdrag
             </Eyebrow>
             <h2 id="rot-rubrik" className="mt-6 font-display text-headline">

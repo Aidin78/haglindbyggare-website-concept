@@ -17,7 +17,7 @@ export function HouseMark({ className }: { className?: string }) {
 export function Wordmark({ className }: { className?: string }) {
   return (
     <span className={cn("flex items-center gap-3", className)}>
-      <HouseMark className="size-8" />
+      <HouseMark className="size-8 text-brand" />
       <span className="flex flex-col leading-none">
         <span className="font-display text-[1.45rem] font-medium tracking-[-0.01em]">Haglind</span>
         <span className="mt-1 text-[0.6rem] font-medium tracking-[0.32em] uppercase opacity-75">Byggare AB</span>

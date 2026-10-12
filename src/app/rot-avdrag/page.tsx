@@ -43,7 +43,7 @@ export default function RotPage() {
         eyebrow="ROT-avdrag"
         title={
           <>
-            Mindre att betala <em className="text-pine italic">för arbetet.</em>
+            Mindre att betala <em className="text-brand-ink italic">för arbetet.</em>
           </>
         }
         lead={
@@ -59,7 +59,7 @@ export default function RotPage() {
       <section aria-labelledby="omfattning-rubrik" className="py-20 sm:py-28 lg:py-32">
         <Container className="grid gap-12 lg:grid-cols-12 lg:gap-10">
           <div className="lg:col-span-5">
-            <Eyebrow index="01" className="text-pine">
+            <Eyebrow index="01" className="text-brand-ink">
               Vad omfattas
             </Eyebrow>
             <h2 id="omfattning-rubrik" className="mt-6 font-display text-headline">
@@ -78,7 +78,7 @@ export default function RotPage() {
                 <ul className="mt-4 border-t border-ink/15">
                   {group.items.map((item) => (
                     <li key={item} className="flex items-center gap-4 border-b border-ink/15 py-4 text-lg">
-                      <span aria-hidden="true" className="h-px w-4 bg-pine" />
+                      <span aria-hidden="true" className="h-px w-4 bg-brand" />
                       {item}
                     </li>
                   ))}
@@ -91,7 +91,7 @@ export default function RotPage() {
 
       <section aria-labelledby="sa-fungerar-rubrik" className="border-y border-ink/10 bg-paper-deep py-20 sm:py-28 lg:py-32">
         <Container>
-          <Eyebrow index="02" className="text-pine">
+          <Eyebrow index="02" className="text-brand-ink">
             Så går det till
           </Eyebrow>
           <h2 id="sa-fungerar-rubrik" className="mt-6 max-w-3xl font-display text-headline">
@@ -100,7 +100,7 @@ export default function RotPage() {
           <ol className="mt-14 grid gap-px border border-ink/15 bg-ink/15 md:grid-cols-3">
             {steps.map((step, index) => (
               <li key={step.title} className="bg-paper-deep p-6 sm:p-8">
-                <span className="font-display text-5xl leading-none text-timber tabular-nums">
+                <span className="font-display text-5xl leading-none text-brand-ink tabular-nums">
                   {String(index + 1).padStart(2, "0")}
                 </span>
                 <h3 className="mt-6 text-lg font-medium">{step.title}</h3>
@@ -114,7 +114,7 @@ export default function RotPage() {
       <section aria-labelledby="belopp-rubrik" className="py-20 sm:py-28 lg:py-32">
         <Container className="grid gap-12 lg:grid-cols-12 lg:gap-10">
           <div className="lg:col-span-5">
-            <Eyebrow index="03" className="text-pine">
+            <Eyebrow index="03" className="text-brand-ink">
               Belopp och regler
             </Eyebrow>
             <h2 id="belopp-rubrik" className="mt-6 font-display text-headline">

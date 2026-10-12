@@ -13,7 +13,7 @@ export default function NotFound() {
   return (
     <Container className="grid gap-12 py-20 sm:py-28 lg:grid-cols-12 lg:py-36">
       <div className="lg:col-span-7">
-        <Eyebrow className="text-pine">404</Eyebrow>
+        <Eyebrow className="text-brand-ink">404</Eyebrow>
         <h1 className="mt-6 font-display text-display font-normal">Här står inget hus än.</h1>
         <p className="mt-8 max-w-lg text-lead text-ink-soft">
           Sidan du letar efter finns inte, eller har flyttats. Gå till startsidan eller hör av dig direkt.

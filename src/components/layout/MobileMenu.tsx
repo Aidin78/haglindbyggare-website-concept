@@ -64,7 +64,7 @@ export function MobileMenu() {
                     aria-current={active ? "page" : undefined}
                     className={cn(
                       "flex min-h-16 items-baseline gap-4 py-3 font-display text-[2rem] leading-tight",
-                      active ? "text-pine" : "text-ink",
+                      active ? "text-brand-ink" : "text-ink",
                     )}
                   >
                     <span className="font-sans text-xs tracking-[0.18em] text-ink-soft tabular-nums">

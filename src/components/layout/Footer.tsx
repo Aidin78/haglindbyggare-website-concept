@@ -7,14 +7,14 @@ import { Wordmark } from "@/components/ui/Brand";
 import { InstagramIcon } from "@/components/ui/InstagramIcon";
 import { Ruler } from "@/components/ui/Ruler";
 
-const headingClass = "text-xs font-medium tracking-[0.18em] text-moss uppercase";
+const headingClass = "text-xs font-medium tracking-[0.18em] text-brand uppercase";
 const linkClass = "link-underline text-paper/85 transition-colors hover:text-paper";
 
 export function Footer() {
   const { contact } = site;
 
   return (
-    <footer data-tone="dark" className="bg-pine-deep text-paper">
+    <footer data-tone="dark" className="bg-char-deep text-paper">
       <Container className="pt-16 pb-10 sm:pt-20">
         <div className="grid gap-12 lg:grid-cols-12">
           <div className="lg:col-span-4">
@@ -83,7 +83,7 @@ export function Footer() {
           </div>
         </div>
 
-        <Ruler className="mt-16 text-moss" />
+        <Ruler className="mt-16 text-brand" />
 
         <div className="mt-6 flex flex-col gap-4 text-sm text-paper/60 sm:flex-row sm:items-center sm:justify-between">
           <p>© {site.name}</p>

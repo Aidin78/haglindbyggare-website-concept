@@ -29,10 +29,10 @@ export function ExperienceSection() {
         </figure>
 
         <div className="flex flex-col lg:col-span-6 lg:col-start-7">
-          <Eyebrow index="03" className="text-pine">
+          <Eyebrow index="03" className="text-brand-ink">
             Erfarenhet
           </Eyebrow>
-          <p aria-hidden="true" className="mt-8 font-display text-[clamp(5rem,3rem+9vw,11rem)] leading-[0.85] tracking-[-0.04em] text-pine">
+          <p aria-hidden="true" className="mt-8 font-display text-[clamp(5rem,3rem+9vw,11rem)] leading-[0.85] tracking-[-0.04em] text-brand">
             <span className="mr-3 font-display text-[0.28em] tracking-normal text-ink-soft italic">ca</span>
             {site.housesBuilt.replace("ca ", "")}
           </p>

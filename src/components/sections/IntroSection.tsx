@@ -9,7 +9,7 @@ export function IntroSection() {
     <section aria-labelledby="om-foretaget" className="py-20 sm:py-28 lg:py-36">
       <Container className="grid gap-12 lg:grid-cols-12 lg:gap-10">
         <div className="lg:col-span-4">
-          <Eyebrow index="01" className="text-pine">
+          <Eyebrow index="01" className="text-brand-ink">
             Familjeföretaget
           </Eyebrow>
           <h2 id="om-foretaget" className="sr-only">
@@ -21,7 +21,7 @@ export function IntroSection() {
           <figure>
             <blockquote className="font-display text-[clamp(1.75rem,1.2rem+2.4vw,3.25rem)] leading-[1.12] tracking-[-0.015em]">
               <p>
-                <span aria-hidden="true" className="text-timber">
+                <span aria-hidden="true" className="text-brand">
                   ”
                 </span>
                 Alla projekt är intressanta och värdefulla för oss, oavsett storlek.
@@ -45,7 +45,7 @@ export function IntroSection() {
 
           <Link
             href="/om-oss"
-            className="group mt-10 inline-flex min-h-11 items-center gap-3 font-medium text-pine"
+            className="group mt-10 inline-flex min-h-11 items-center gap-3 font-medium text-brand-ink"
           >
             <span className="link-underline">Läs mer om oss</span>
             <ArrowRight

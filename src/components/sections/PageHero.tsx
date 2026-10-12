@@ -15,7 +15,7 @@ export function PageHero({ eyebrow, title, lead, children }: PageHeroProps) {
     <section className="relative overflow-hidden border-b border-ink/10">
       <Container className="relative grid gap-10 pt-14 pb-16 sm:pt-20 sm:pb-20 lg:grid-cols-12 lg:pt-28 lg:pb-24">
         <div className="lg:col-span-8">
-          <Eyebrow className="text-pine">{eyebrow}</Eyebrow>
+          <Eyebrow className="text-brand-ink">{eyebrow}</Eyebrow>
           <h1 className="mt-6 font-display text-display font-normal">{title}</h1>
           <div className="mt-8 max-w-2xl text-lead text-ink-soft">{lead}</div>
           {children && <div className="mt-10 flex flex-col gap-3 sm:flex-row">{children}</div>}

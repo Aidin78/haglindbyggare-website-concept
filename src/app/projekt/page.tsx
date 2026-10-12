@@ -23,7 +23,7 @@ export default function ProjectsPage() {
         eyebrow="Projekt & referenser"
         title={
           <>
-            Hus vi har varit med <em className="text-pine italic">och byggt.</em>
+            Hus vi har varit med <em className="text-brand-ink italic">och byggt.</em>
           </>
         }
         lead={
@@ -37,7 +37,7 @@ export default function ProjectsPage() {
       <section aria-labelledby="referens-rubrik" className="border-b border-ink/10 py-20 sm:py-28">
         <Container className="grid gap-10 lg:grid-cols-12 lg:gap-10">
           <div className="lg:col-span-4">
-            <Eyebrow index="01" className="text-pine">
+            <Eyebrow index="01" className="text-brand-ink">
               Största referens
             </Eyebrow>
           </div>
@@ -56,7 +56,7 @@ export default function ProjectsPage() {
         <Container>
           <div className="mb-14 flex flex-col gap-6 sm:flex-row sm:items-end sm:justify-between">
             <div>
-              <Eyebrow index="02" className="text-pine">
+              <Eyebrow index="02" className="text-brand-ink">
                 Från bygget
               </Eyebrow>
               <h2 id="galleri-rubrik" className="mt-6 font-display text-headline">
@@ -73,7 +73,7 @@ export default function ProjectsPage() {
       <section aria-labelledby="instagram-rubrik" className="bg-paper-deep py-20 sm:py-24">
         <Container className="flex flex-col gap-10 lg:flex-row lg:items-end lg:justify-between">
           <div>
-            <Eyebrow className="text-pine">Instagram</Eyebrow>
+            <Eyebrow className="text-brand-ink">Instagram</Eyebrow>
             <h2 id="instagram-rubrik" className="mt-6 max-w-3xl font-display text-headline">
               Följ pågående projekt på {site.social.instagram.handle}.
             </h2>

@@ -19,7 +19,7 @@ import { cn } from "@/lib/cn";
 const initialState: ContactState = { status: "idle" };
 
 const inputClass =
-  "block w-full rounded-none border-0 border-b border-ink/30 bg-transparent px-0 py-3 text-lg text-ink transition-colors placeholder:text-ink-soft/70 hover:border-ink/60 focus:border-pine focus:shadow-[0_1px_0_var(--color-pine)] focus:outline-none focus-visible:outline-none aria-[invalid=true]:border-alert";
+  "block w-full rounded-none border-0 border-b border-ink/30 bg-transparent px-0 py-3 text-lg text-ink transition-colors placeholder:text-ink-soft/70 hover:border-ink/60 focus:border-brand-ink focus:shadow-[0_1px_0_var(--color-brand-ink)] focus:outline-none focus-visible:outline-none aria-[invalid=true]:border-alert";
 
 const labels: Record<ContactField, string> = {
   name: "Namn",
@@ -105,12 +105,12 @@ export function ContactForm({ defaultService }: { defaultService?: string }) {
 
   if (state.status === "success") {
     return (
-      <div role="status" className="border border-pine/30 bg-pine/5 p-8 sm:p-10">
-        <CircleCheck aria-hidden="true" className="size-8 text-pine" strokeWidth={1.5} />
+      <div role="status" className="border border-brand/40 bg-brand/5 p-8 sm:p-10">
+        <CircleCheck aria-hidden="true" className="size-8 text-brand-ink" strokeWidth={1.5} />
         <h2 className="mt-6 font-display text-title">Tack – ditt meddelande är skickat.</h2>
         <p className="mt-4 text-ink-soft">
           Vi återkommer så snart vi kan. Är det bråttom når du oss på{" "}
-          <a href={site.contact.phoneHref} className="text-pine underline underline-offset-4">
+          <a href={site.contact.phoneHref} className="text-brand-ink underline underline-offset-4">
             {site.contact.phoneDisplay}
           </a>
           .
@@ -258,7 +258,7 @@ export function ContactForm({ defaultService }: { defaultService?: string }) {
             aria-invalid={Boolean(errors.consent?.length)}
             aria-describedby={errors.consent?.length ? "kontakt-consent-fel" : "kontakt-consent-info"}
             onChange={() => revalidate("consent")}
-            className="mt-1 size-5 shrink-0 cursor-pointer accent-pine"
+            className="mt-1 size-5 shrink-0 cursor-pointer accent-brand-ink"
           />
           <div>
             <label htmlFor="kontakt-consent" className="cursor-pointer text-sm leading-relaxed">
@@ -279,7 +279,7 @@ export function ContactForm({ defaultService }: { defaultService?: string }) {
         <button
           type="submit"
           disabled={pending}
-          className="group mt-10 inline-flex min-h-14 w-full items-center justify-center gap-3 bg-pine px-8 text-base font-medium text-paper transition-colors hover:bg-pine-deep disabled:cursor-wait disabled:opacity-70 sm:w-auto"
+          className="group mt-10 inline-flex min-h-14 w-full items-center justify-center gap-3 bg-brand px-8 text-base font-medium text-ink transition-colors hover:bg-brand-deep disabled:cursor-wait disabled:opacity-70 sm:w-auto"
         >
           {pending ? (
             <>

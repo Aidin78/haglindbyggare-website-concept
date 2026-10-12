@@ -16,7 +16,7 @@ export const metadata = pageMetadata({
 });
 
 const directLinkClass =
-  "group flex min-h-16 items-center gap-5 border-b border-ink/15 py-5 transition-colors hover:text-pine";
+  "group flex min-h-16 items-center gap-5 border-b border-ink/15 py-5 transition-colors hover:text-brand-ink";
 
 export default function ContactPage() {
   const { contact } = site;
@@ -26,9 +26,9 @@ export default function ContactPage() {
       <section className="border-b border-ink/10">
         <Container className="grid gap-16 pt-14 pb-20 sm:pt-20 lg:grid-cols-12 lg:gap-10 lg:pt-28 lg:pb-28">
           <div className="lg:col-span-5">
-            <Eyebrow className="text-pine">Kontakt</Eyebrow>
+            <Eyebrow className="text-brand-ink">Kontakt</Eyebrow>
             <h1 className="mt-6 font-display text-[clamp(2.6rem,1.6rem+3.6vw,5.25rem)] leading-[0.98] font-normal tracking-[-0.025em]">
-              Hör av dig <em className="text-pine italic">till oss.</em>
+              Hör av dig <em className="text-brand-ink italic">till oss.</em>
             </h1>
             <p className="mt-8 max-w-md text-lead text-ink-soft">
               Välkommen att kontakta oss om du har frågor eller vill ha en offert. Ring, mejla eller använd formuläret.
@@ -37,7 +37,7 @@ export default function ContactPage() {
             <ul className="mt-12 border-t border-ink/15">
               <li>
                 <a href={contact.phoneHref} className={directLinkClass}>
-                  <Phone aria-hidden="true" className="size-5 shrink-0 text-pine" strokeWidth={1.5} />
+                  <Phone aria-hidden="true" className="size-5 shrink-0 text-brand" strokeWidth={1.5} />
                   <span className="flex flex-col">
                     <span className="text-xs tracking-[0.18em] text-ink-soft uppercase">Telefon</span>
                     <span className="font-display text-3xl tabular-nums">{contact.phoneDisplay}</span>
@@ -46,7 +46,7 @@ export default function ContactPage() {
               </li>
               <li>
                 <a href={`mailto:${contact.email}`} className={directLinkClass}>
-                  <Mail aria-hidden="true" className="size-5 shrink-0 text-pine" strokeWidth={1.5} />
+                  <Mail aria-hidden="true" className="size-5 shrink-0 text-brand" strokeWidth={1.5} />
                   <span className="flex min-w-0 flex-col">
                     <span className="text-xs tracking-[0.18em] text-ink-soft uppercase">E-post</span>
                     <span className="text-lg break-all sm:text-xl">{contact.email}</span>
@@ -54,7 +54,7 @@ export default function ContactPage() {
                 </a>
               </li>
               <li className="flex items-center gap-5 border-b border-ink/15 py-5">
-                <MapPin aria-hidden="true" className="size-5 shrink-0 text-pine" strokeWidth={1.5} />
+                <MapPin aria-hidden="true" className="size-5 shrink-0 text-brand" strokeWidth={1.5} />
                 <span className="flex flex-col">
                   <span className="text-xs tracking-[0.18em] text-ink-soft uppercase">Adress</span>
                   <address className="text-lg not-italic">{addressLine}</address>
@@ -67,7 +67,7 @@ export default function ContactPage() {
                   rel="noopener noreferrer"
                   className={directLinkClass}
                 >
-                  <InstagramIcon className="size-5 shrink-0 text-pine" />
+                  <InstagramIcon className="size-5 shrink-0 text-brand" />
                   <span className="flex flex-col">
                     <span className="text-xs tracking-[0.18em] text-ink-soft uppercase">Instagram</span>
                     <span className="text-lg">
@@ -100,7 +100,7 @@ export default function ContactPage() {
       <section aria-labelledby="hitta-rubrik" className="py-20 sm:py-28">
         <Container className="grid gap-10 lg:grid-cols-12 lg:gap-10">
           <div className="lg:col-span-4">
-            <Eyebrow className="text-pine">Hitta hit</Eyebrow>
+            <Eyebrow className="text-brand-ink">Hitta hit</Eyebrow>
             <h2 id="hitta-rubrik" className="mt-6 font-display text-headline">
               {contact.address.city}
             </h2>
@@ -121,7 +121,7 @@ export default function ContactPage() {
                     href={link.href}
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="group inline-flex min-h-11 items-center gap-2 font-medium text-pine"
+                    className="group inline-flex min-h-11 items-center gap-2 font-medium text-brand-ink"
                   >
                     <span className="link-underline">{link.label}</span>
                     <ArrowUpRight

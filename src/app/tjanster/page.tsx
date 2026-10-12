@@ -22,7 +22,7 @@ export default function ServicesPage() {
         eyebrow="Tjänster"
         title={
           <>
-            Allt inom bygg <em className="text-pine italic">och snickeri.</em>
+            Allt inom bygg <em className="text-brand-ink italic">och snickeri.</em>
           </>
         }
         lead={
@@ -61,7 +61,7 @@ export default function ServicesPage() {
           >
             <Container className="grid gap-10 lg:grid-cols-12 lg:gap-10">
               <div className="lg:col-span-5">
-                <span className="font-display text-6xl leading-none text-timber tabular-nums sm:text-7xl">
+                <span className="font-display text-6xl leading-none text-brand-ink tabular-nums sm:text-7xl">
                   {String(index + 1).padStart(2, "0")}
                 </span>
                 <h2 id={`${service.id}-rubrik`} className="mt-6 font-display text-headline">
@@ -81,7 +81,7 @@ export default function ServicesPage() {
                 <ul className="mt-4 border-t border-ink/15">
                   {service.examples.map((example) => (
                     <li key={example} className="flex items-center gap-4 border-b border-ink/15 py-3.5">
-                      <span aria-hidden="true" className="h-px w-4 bg-pine" />
+                      <span aria-hidden="true" className="h-px w-4 bg-brand" />
                       {example}
                     </li>
                   ))}
@@ -90,7 +90,7 @@ export default function ServicesPage() {
                 {service.rotNote && (
                   <p className="mt-6 text-sm text-ink-soft">
                     {service.rotNote}{" "}
-                    <Link href="/rot-avdrag" className="text-pine underline underline-offset-4 hover:no-underline">
+                    <Link href="/rot-avdrag" className="text-brand-ink underline underline-offset-4 hover:no-underline">
                       Så fungerar det
                     </Link>
                   </p>
@@ -98,7 +98,7 @@ export default function ServicesPage() {
 
                 <Link
                   href={`/kontakt?tjanst=${service.id}`}
-                  className="group mt-10 inline-flex min-h-11 items-center gap-3 font-medium text-pine"
+                  className="group mt-10 inline-flex min-h-11 items-center gap-3 font-medium text-brand-ink"
                 >
                   <span className="link-underline">Fråga oss om {service.title.toLowerCase()}</span>
                   <ArrowRight

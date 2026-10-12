@@ -15,10 +15,10 @@ export function ContactCta({
   const { contact } = site;
 
   return (
-    <section data-tone="dark" aria-labelledby="kontakt-cta" className="bg-pine text-paper">
+    <section data-tone="dark" aria-labelledby="kontakt-cta" className="bg-char text-paper">
       <Container className="grid gap-12 py-20 sm:py-24 lg:grid-cols-12 lg:py-32">
         <div className="lg:col-span-7">
-          <Eyebrow className="text-moss">Kontakt</Eyebrow>
+          <Eyebrow className="text-brand">Kontakt</Eyebrow>
           <h2 id="kontakt-cta" className="mt-6 font-display text-headline">
             {title}
           </h2>
@@ -32,18 +32,18 @@ export function ContactCta({
 
         <dl className="grid content-end gap-8 border-t border-paper/20 pt-8 lg:col-span-5 lg:border-t-0 lg:border-l lg:pt-0 lg:pl-12">
           <div>
-            <dt className="text-xs tracking-[0.18em] text-moss uppercase">Ring Frederic</dt>
+            <dt className="text-xs tracking-[0.18em] text-brand uppercase">Ring Frederic</dt>
             <dd className="mt-2">
               <a
                 href={contact.phoneHref}
-                className="font-display text-[clamp(2rem,1.4rem+2.6vw,3.25rem)] leading-none tabular-nums transition-colors hover:text-timber-soft"
+                className="font-display text-[clamp(2rem,1.4rem+2.6vw,3.25rem)] leading-none tabular-nums transition-colors hover:text-brand"
               >
                 {contact.phoneDisplay}
               </a>
             </dd>
           </div>
           <div>
-            <dt className="text-xs tracking-[0.18em] text-moss uppercase">Mejla</dt>
+            <dt className="text-xs tracking-[0.18em] text-brand uppercase">Mejla</dt>
             <dd className="mt-2">
               <a
                 href={`mailto:${contact.email}`}

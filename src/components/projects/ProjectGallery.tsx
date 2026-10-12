@@ -60,7 +60,7 @@ export function ProjectGallery({ projects }: { projects: readonly Project[] }) {
                     <span className="text-sm text-ink-soft tabular-nums">{project.period}</span>
                   </span>
                   <span className="mt-2 block text-ink-soft">{project.description}</span>
-                  <span className="mt-3 block text-xs tracking-[0.18em] text-pine uppercase">{project.category}</span>
+                  <span className="mt-3 block text-xs tracking-[0.18em] text-brand-ink uppercase">{project.category}</span>
                 </figcaption>
               </figure>
             </li>
@@ -89,7 +89,7 @@ export function ProjectGallery({ projects }: { projects: readonly Project[] }) {
               type="button"
               autoFocus
               onClick={() => dialogRef.current?.close()}
-              className="inline-flex size-12 items-center justify-center hover:text-timber-soft"
+              className="inline-flex size-12 items-center justify-center hover:text-brand"
             >
               <X aria-hidden="true" className="size-6" strokeWidth={1.5} />
               <span className="sr-only">Stäng</span>

@@ -15,7 +15,7 @@ export default async function OpengraphImage() {
     (
       <div style={{ display: "flex", width: "100%", height: "100%", background: "#f5f1ea", color: "#1c1d1a" }}>
         <div style={{ display: "flex", flexDirection: "column", justifyContent: "space-between", padding: 64, width: 630 }}>
-          <div style={{ display: "flex", fontSize: 22, letterSpacing: 6, textTransform: "uppercase", color: "#213a2d" }}>
+          <div style={{ display: "flex", fontSize: 22, letterSpacing: 6, textTransform: "uppercase", color: "#a54c10" }}>
             {site.name}
           </div>
           <div style={{ display: "flex", flexDirection: "column" }}>
@@ -24,7 +24,7 @@ export default async function OpengraphImage() {
               {`Byggmästare i Stockholm och Mälardalen sedan år ${site.foundedYear}`}
             </div>
           </div>
-          <div style={{ display: "flex", fontSize: 24, color: "#213a2d" }}>{site.contact.phoneDisplay}</div>
+          <div style={{ display: "flex", fontSize: 24, color: "#a54c10" }}>{site.contact.phoneDisplay}</div>
         </div>
         {/* eslint-disable-next-line @next/next/no-img-element */}
         <img src={photoSrc} alt="" width={570} height={630} style={{ objectFit: "cover" }} />

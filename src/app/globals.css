@@ -6,12 +6,13 @@
   --color-stone: #d6cdbd;
   --color-ink: #1c1d1a;
   --color-ink-soft: #52524a;
-  --color-pine: #213a2d;
-  --color-pine-deep: #182b21;
-  --color-pine-soft: #2e4d3c;
-  --color-moss: #a9b79a;
-  --color-timber: #c19159;
-  --color-timber-soft: #e3cfae;
+  /* Brand orange from haglindbyggare.se. Too light for text on paper –
+     use brand-ink there; brand itself for fills, icons and dark surfaces. */
+  --color-brand: #ed863f;
+  --color-brand-deep: #d9702a;
+  --color-brand-ink: #a54c10;
+  --color-char: #26221f;
+  --color-char-deep: #1d1a18;
   --color-alert: #9b2c1f;
 
   --font-display: var(--font-newsreader), "Iowan Old Style", Georgia, serif;
@@ -55,18 +56,18 @@
   }
 
   ::selection {
-    background-color: var(--color-pine);
-    color: var(--color-paper);
+    background-color: var(--color-brand);
+    color: var(--color-ink);
   }
 
   :focus-visible {
-    outline: 2px solid var(--focus-ring, var(--color-pine));
+    outline: 2px solid var(--focus-ring, var(--color-brand-ink));
     outline-offset: 3px;
     border-radius: 2px;
   }
 
   [data-tone="dark"] {
-    --focus-ring: var(--color-timber-soft);
+    --focus-ring: var(--color-brand);
   }
 
   h1,

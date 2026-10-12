@@ -34,7 +34,7 @@ export function ServicesIndex() {
                 </span>
                 <ArrowUpRight
                   aria-hidden="true"
-                  className="col-start-3 row-start-1 size-6 self-center text-ink-soft transition-all duration-500 ease-out-soft group-hover:rotate-45 group-hover:text-pine lg:col-start-4"
+                  className="col-start-3 row-start-1 size-6 self-center text-ink-soft transition-all duration-500 ease-out-soft group-hover:rotate-45 group-hover:text-brand lg:col-start-4"
                   strokeWidth={1.25}
                 />
               </Link>
